@@ -40,7 +40,7 @@ def preprocess_input(sample_dict):
     return X_scaled
 @app.get("/")
 def read_root():
-    return {"message": "L'API de prédiction immobilière est en ligne 🚀"}
+    return {"message": "L'API de prédiction immobilière est en ligne "}
 
 @app.post("/predict")
 def predict(req: PredictRequest):
