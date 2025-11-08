@@ -38,6 +38,9 @@ def preprocess_input(sample_dict):
 
     X_scaled = scaler.transform(df_final)
     return X_scaled
+@app.get("/")
+def read_root():
+    return {"message": "L'API de prédiction immobilière est en ligne 🚀"}
 
 @app.post("/predict")
 def predict(req: PredictRequest):
