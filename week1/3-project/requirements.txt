@@ -5,3 +5,5 @@ joblib
 pydantic
 pandas
 scikit-learn
+streamlit
+requests
